@@ -1,4 +1,4 @@
-version = LibraryAndroidCoordinates.LIBRARY_VERSION
+version = AnalyticsAndroidCoordinates.VERSION
 
 plugins {
     id("com.android.library")
@@ -14,8 +14,8 @@ android {
         minSdkVersion(Sdk.MIN_SDK_VERSION)
         targetSdkVersion(Sdk.TARGET_SDK_VERSION)
 
-        versionCode = LibraryAndroidCoordinates.LIBRARY_VERSION_CODE
-        versionName = LibraryAndroidCoordinates.LIBRARY_VERSION
+        versionCode = AnalyticsAndroidCoordinates.VERSION_CODE
+        versionName = AnalyticsAndroidCoordinates.VERSION
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")

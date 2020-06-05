@@ -1,4 +1,4 @@
-version = LibraryKotlinCoordinates.LIBRARY_VERSION
+version = AnalyticsKotlinCoordinates.VERSION
 
 plugins {
     id("java-library")
