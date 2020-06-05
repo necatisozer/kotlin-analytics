@@ -5,5 +5,4 @@ import com.necatisozer.analytics.core.event.ScreenViewEvent
 
 interface AndroidScreenViewEvent : ScreenViewEvent {
     val activity: Activity
-    val className: String? get() = null
 }
