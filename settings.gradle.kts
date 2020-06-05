@@ -22,5 +22,6 @@ rootProject.name = ("kotlin-analytics")
 include(
     "analytics-kotlin",
     "analytics-android",
+    "tracker-firebase",
     "app"
 )
