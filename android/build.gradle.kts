@@ -44,7 +44,7 @@ android {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    api(project(":analytics-kotlin"))
+    api(project(":core"))
 
     testImplementation(TestingLib.JUNIT)
 

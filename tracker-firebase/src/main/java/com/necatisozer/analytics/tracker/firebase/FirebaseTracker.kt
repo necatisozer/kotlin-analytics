@@ -4,9 +4,9 @@ import android.content.Context
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.necatisozer.analytics.android.AndroidAnalyticsTracker
 import com.necatisozer.analytics.android.event.AndroidScreenViewEvent
-import com.necatisozer.analytics.kotlin.event.CustomEvent
-import com.necatisozer.analytics.kotlin.event.Event
-import com.necatisozer.analytics.kotlin.event.UserProperties
+import com.necatisozer.analytics.core.event.CustomEvent
+import com.necatisozer.analytics.core.event.Event
+import com.necatisozer.analytics.core.event.UserProperties
 import com.necatisozer.analytics.tracker.firebase.extension.toBundle
 
 open class FirebaseTracker(override val context: Context) : AndroidAnalyticsTracker {

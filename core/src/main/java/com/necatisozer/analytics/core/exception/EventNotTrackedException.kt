@@ -1,7 +1,7 @@
-package com.necatisozer.analytics.kotlin.exception
+package com.necatisozer.analytics.core.exception
 
-import com.necatisozer.analytics.kotlin.AnalyticsTracker
-import com.necatisozer.analytics.kotlin.event.Event
+import com.necatisozer.analytics.core.AnalyticsTracker
+import com.necatisozer.analytics.core.event.Event
 
 class EventNotTrackedException(tracker: AnalyticsTracker, event: Event, cause: Throwable) :
     RuntimeException("${tracker.name} couldn't track $event", cause)

@@ -44,7 +44,7 @@ android {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation(project(":analytics-android"))
+    implementation(project(":android"))
 
     implementation("com.google.firebase:firebase-core:17.4.3")
 

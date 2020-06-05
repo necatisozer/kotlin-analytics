@@ -1,4 +1,4 @@
-package com.necatisozer.analytics.kotlin.event
+package com.necatisozer.analytics.core.event
 
 interface CustomEvent : Event {
     val name: String

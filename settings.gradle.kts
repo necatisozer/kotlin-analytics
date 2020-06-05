@@ -20,8 +20,8 @@ pluginManagement {
 rootProject.name = ("kotlin-analytics")
 
 include(
-    "analytics-kotlin",
-    "analytics-android",
+    "core",
+    "android",
     "tracker-firebase",
     "app"
 )

@@ -1,7 +1,7 @@
-package com.necatisozer.analytics.kotlin
+package com.necatisozer.analytics.core
 
-import com.necatisozer.analytics.kotlin.event.Event
-import com.necatisozer.analytics.kotlin.exception.EventNotTrackedException
+import com.necatisozer.analytics.core.event.Event
+import com.necatisozer.analytics.core.exception.EventNotTrackedException
 
 class Analytics(
     var isEnabled: Boolean = true,
