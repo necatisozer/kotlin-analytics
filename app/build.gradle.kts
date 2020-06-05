@@ -39,6 +39,7 @@ android {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(project(":analytics-android"))
+    implementation(project(":tracker-firebase"))
 
     implementation(SupportLibs.ANDROIDX_APPCOMPAT)
     implementation(SupportLibs.ANDROIDX_CONSTRAINT_LAYOUT)
