@@ -1,26 +1,26 @@
 object Sdk {
     const val MIN_SDK_VERSION = 16
-    const val TARGET_SDK_VERSION = 29
-    const val COMPILE_SDK_VERSION = 29
+    const val TARGET_SDK_VERSION = 30
+    const val COMPILE_SDK_VERSION = 30
 }
 
 object Versions {
-    const val ANDROIDX_TEST_EXT = "1.1.2-rc01"
-    const val ANDROIDX_TEST = "1.3.0-rc01"
-    const val APPCOMPAT = "1.3.0-alpha01"
-    const val CONSTRAINT_LAYOUT = "2.0.0-beta6"
-    const val CORE_KTX = "1.4.0-alpha01"
-    const val ESPRESSO_CORE = "3.3.0-rc01"
-    const val JUNIT = "4.13"
-    const val KTLINT = "0.36.0"
+    const val ANDROIDX_TEST_EXT = "1.1.2"
+    const val ANDROIDX_TEST = "1.3.0"
+    const val APPCOMPAT = "1.2.0"
+    const val CONSTRAINT_LAYOUT = "2.0.4"
+    const val CORE_KTX = "1.3.2"
+    const val ESPRESSO_CORE = "3.3.0"
+    const val JUNIT = "4.13.1"
+    const val KTLINT = "0.39.0"
 }
 
 object BuildPluginsVersion {
-    const val AGP = "4.0.0"
-    const val DETEKT = "1.9.1"
-    const val KOTLIN = "1.3.72"
-    const val KTLINT = "9.2.1"
-    const val VERSIONS_PLUGIN = "0.28.0"
+    const val AGP = "4.1.0"
+    const val DETEKT = "1.14.2"
+    const val KOTLIN = "1.4.10"
+    const val KTLINT = "9.4.1"
+    const val VERSIONS_PLUGIN = "0.34.0"
 }
 
 object SupportLibs {

@@ -46,7 +46,7 @@ dependencies {
     implementation(kotlin("stdlib"))
     implementation(project(":android"))
 
-    implementation("com.google.firebase:firebase-core:17.4.3")
+    implementation("com.google.firebase:firebase-core:18.0.0")
 
     testImplementation(TestingLib.JUNIT)
 
