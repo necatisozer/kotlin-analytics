@@ -7,15 +7,15 @@ object AppCoordinates {
 }
 
 object AnalyticsAndroidCoordinates {
-    const val VERSION = "1.0.0-alpha01"
+    const val VERSION = "1.0.0-alpha02"
     const val VERSION_CODE = 1
 }
 
 object AnalyticsKotlinCoordinates {
-    const val VERSION = "1.0.0-alpha01"
+    const val VERSION = "1.0.0-alpha02"
 }
 
 object FirebaseTrackerCoordinates {
-    const val VERSION = "1.0.0-alpha01"
+    const val VERSION = "1.0.0-alpha02"
     const val VERSION_CODE = 1
 }
