@@ -12,8 +12,8 @@ import com.necatisozer.analytics.core.event.ScreenViewEvent
 import com.necatisozer.analytics.core.event.UserProperties
 import com.necatisozer.analytics.tracker.firebase.extension.toBundle
 
-open class FirebaseTracker(override val context: Context) : AndroidAnalyticsTracker {
-    override val name = "Firebase Analytics"
+public open class FirebaseTracker(override val context: Context) : AndroidAnalyticsTracker {
+    override val name: String = "Firebase Analytics"
 
     private val firebaseAnalytics by lazy { Firebase.analytics }
 
@@ -25,18 +25,18 @@ open class FirebaseTracker(override val context: Context) : AndroidAnalyticsTrac
         }
     }
 
-    private fun trackCustomEvent(event: CustomEvent) {
+    protected fun trackCustomEvent(event: CustomEvent) {
         firebaseAnalytics.logEvent(event.name, event.parameters.toBundle())
     }
 
-    private fun trackScreenViewEvent(event: ScreenViewEvent) {
+    protected fun trackScreenViewEvent(event: ScreenViewEvent) {
         firebaseAnalytics.logEvent(FirebaseAnalytics.Event.SCREEN_VIEW) {
             param(FirebaseAnalytics.Param.SCREEN_NAME, event.name)
             event.className?.let { param(FirebaseAnalytics.Param.SCREEN_CLASS, it) }
         }
     }
 
-    private fun setUserProperties(event: UserProperties) {
+    protected fun setUserProperties(event: UserProperties) {
         event.properties.forEach {
             firebaseAnalytics.setUserProperty(it.key, it.value.toString())
         }

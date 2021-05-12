@@ -1,6 +1,6 @@
 package com.necatisozer.analytics.core.event
 
-interface ScreenViewEvent : Event {
-    val name: String
-    val className: String? get() = null
+public interface ScreenViewEvent : Event {
+    public val name: String
+    public val className: String? get() = null
 }

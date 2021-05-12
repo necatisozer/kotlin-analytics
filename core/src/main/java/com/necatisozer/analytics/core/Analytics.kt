@@ -3,28 +3,28 @@ package com.necatisozer.analytics.core
 import com.necatisozer.analytics.core.event.Event
 import com.necatisozer.analytics.core.exception.EventNotTrackedException
 
-class Analytics(
-    var isEnabled: Boolean = true,
-    var onError: ((Throwable) -> Unit)? = null
+public class Analytics(
+    public var isEnabled: Boolean = true,
+    private var onError: ((Throwable) -> Unit)? = null
 ) {
     private val trackerMap = mutableMapOf<String, TrackerData>()
 
-    val enabledTrackers: List<AnalyticsTracker>
+    public val enabledTrackers: List<AnalyticsTracker>
         get() = trackerMap.values.mapNotNull { trackerData ->
             trackerData.takeIf { it.isEnabled }?.tracker
         }
 
-    fun registerTracker(id: String, tracker: AnalyticsTracker, isEnabled: Boolean = true) {
+    public fun registerTracker(id: String, tracker: AnalyticsTracker, isEnabled: Boolean = true) {
         trackerMap[id] = TrackerData(tracker, isEnabled)
     }
 
-    fun isTrackerEnabled(id: String): Boolean? = trackerMap[id]?.isEnabled
+    public fun isTrackerEnabled(id: String): Boolean? = trackerMap[id]?.isEnabled
 
-    fun setTrackerEnabled(id: String, isEnabled: Boolean = true) {
+    public fun setTrackerEnabled(id: String, isEnabled: Boolean = true) {
         trackerMap[id]?.isEnabled = isEnabled
     }
 
-    fun track(vararg events: Event) {
+    public fun track(vararg events: Event) {
         if (isEnabled.not()) return
 
         enabledTrackers.forEach { tracker ->

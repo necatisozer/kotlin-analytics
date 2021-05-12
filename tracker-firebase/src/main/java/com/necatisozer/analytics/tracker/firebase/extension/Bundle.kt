@@ -10,7 +10,7 @@ import android.util.SparseArray
 import androidx.core.app.BundleCompat
 
 @Suppress("ComplexMethod")
-fun Bundle.put(key: String, value: Any?) {
+internal fun Bundle.put(key: String, value: Any?) {
     when (value) {
         is String -> putString(key, value)
         is IntArray -> putIntArray(key, value)

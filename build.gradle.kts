@@ -1,4 +1,5 @@
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("com.android.application") apply false
@@ -14,6 +15,14 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+    }
+
+    afterEvaluate {
+        if (plugins.findPlugin("com.android.application") == null) {
+            tasks.withType<KotlinCompile>().configureEach {
+                kotlinOptions.freeCompilerArgs += "-Xexplicit-api=strict"
+            }
+        }
     }
 }
 

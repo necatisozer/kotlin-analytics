@@ -1,6 +1,6 @@
 package com.necatisozer.analytics.core.event
 
-interface CustomEvent : Event {
-    val name: String
-    val parameters: Map<String, Any> get() = emptyMap()
+public interface CustomEvent : Event {
+    public val name: String
+    public val parameters: Map<String, Any> get() = emptyMap()
 }

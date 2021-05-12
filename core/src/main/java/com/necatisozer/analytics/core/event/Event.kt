@@ -1,3 +1,3 @@
 package com.necatisozer.analytics.core.event
 
-interface Event
+public interface Event
