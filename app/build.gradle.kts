@@ -1,7 +1,6 @@
 plugins {
     id("com.android.application")
     kotlin("android")
-    id("kotlin-android-extensions")
 }
 
 android {
@@ -15,6 +14,9 @@ android {
         versionCode = AppCoordinates.VERSION_CODE
         versionName = AppCoordinates.VERSION_NAME
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildFeatures {
+        viewBinding = true
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
@@ -37,7 +39,8 @@ android {
 }
 
 dependencies {
-    implementation(kotlin("stdlib"))
+    implementation(kotlin("stdlib-jdk7"))
+
     implementation(project(":android"))
     implementation(project(":tracker-firebase"))
 

@@ -4,10 +4,11 @@ plugins {
     id("java-library")
     kotlin("jvm")
     id("maven-publish")
+    publish
 }
 
 dependencies {
-    implementation(kotlin("stdlib"))
+    implementation(kotlin("stdlib-jdk7"))
 
     testImplementation(TestingLib.JUNIT)
 }
@@ -15,12 +16,4 @@ dependencies {
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
-}
-
-publishing {
-    publications {
-        create<MavenPublication>("maven") {
-            from(components["java"])
-        }
-    }
 }

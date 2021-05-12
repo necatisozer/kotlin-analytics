@@ -11,26 +11,31 @@ object Versions {
     const val CONSTRAINT_LAYOUT = "2.0.4"
     const val CORE_KTX = "1.3.2"
     const val ESPRESSO_CORE = "3.3.0"
-    const val JUNIT = "4.13.1"
-    const val KTLINT = "0.39.0"
+    const val JUNIT = "4.13.2"
+    const val KTLINT = "0.41.0"
+    const val FIREBASE_BOM = "28.0.0"
 }
 
 object BuildPluginsVersion {
-    const val AGP = "4.1.0"
-    const val DETEKT = "1.14.2"
-    const val KOTLIN = "1.4.10"
-    const val KTLINT = "9.4.1"
-    const val VERSIONS_PLUGIN = "0.34.0"
+    const val DETEKT = "1.17.0-RC2"
+    const val KTLINT = "10.0.0"
+    const val VERSIONS_PLUGIN = "0.38.0"
 }
 
 object SupportLibs {
     const val ANDROIDX_APPCOMPAT = "androidx.appcompat:appcompat:${Versions.APPCOMPAT}"
-    const val ANDROIDX_CONSTRAINT_LAYOUT = "androidx.constraintlayout:constraintlayout:${Versions.CONSTRAINT_LAYOUT}"
+    const val ANDROIDX_CONSTRAINT_LAYOUT =
+        "androidx.constraintlayout:constraintlayout:${Versions.CONSTRAINT_LAYOUT}"
     const val ANDROIDX_CORE_KTX = "androidx.core:core-ktx:${Versions.CORE_KTX}"
 }
 
 object TestingLib {
     const val JUNIT = "junit:junit:${Versions.JUNIT}"
+}
+
+object FirebaseLibs {
+    const val BOM = "com.google.firebase:firebase-bom:${Versions.FIREBASE_BOM}"
+    const val ANALYTICS = "com.google.firebase:firebase-analytics-ktx"
 }
 
 object AndroidTestingLib {
