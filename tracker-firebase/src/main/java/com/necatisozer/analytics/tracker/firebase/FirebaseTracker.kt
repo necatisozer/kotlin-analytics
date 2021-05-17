@@ -1,18 +1,17 @@
 package com.necatisozer.analytics.tracker.firebase
 
-import android.content.Context
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.analytics.ktx.logEvent
 import com.google.firebase.ktx.Firebase
-import com.necatisozer.analytics.android.AndroidAnalyticsTracker
+import com.necatisozer.analytics.core.AnalyticsTracker
 import com.necatisozer.analytics.core.event.CustomEvent
 import com.necatisozer.analytics.core.event.Event
 import com.necatisozer.analytics.core.event.ScreenViewEvent
 import com.necatisozer.analytics.core.event.UserProperties
 import com.necatisozer.analytics.tracker.firebase.extension.toBundle
 
-public open class FirebaseTracker(override val context: Context) : AndroidAnalyticsTracker {
+public open class FirebaseTracker : AnalyticsTracker {
     override val name: String = "Firebase Analytics"
 
     private val firebaseAnalytics by lazy { Firebase.analytics }
