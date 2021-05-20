@@ -44,13 +44,13 @@ dependencies {
     implementation(project(":android"))
     implementation(project(":tracker-firebase"))
 
-    implementation(SupportLibs.ANDROIDX_APPCOMPAT)
-    implementation(SupportLibs.ANDROIDX_CONSTRAINT_LAYOUT)
-    implementation(SupportLibs.ANDROIDX_CORE_KTX)
+    implementation(libs.appcompat)
+    implementation(libs.constraintlayout)
+    implementation(libs.coreKtx)
 
-    testImplementation(TestingLib.JUNIT)
+    testImplementation(libs.junitJunit)
 
-    androidTestImplementation(AndroidTestingLib.ANDROIDX_TEST_EXT_JUNIT)
-    androidTestImplementation(AndroidTestingLib.ANDROIDX_TEST_RULES)
-    androidTestImplementation(AndroidTestingLib.ESPRESSO_CORE)
+    androidTestImplementation(libs.androidxTestExtJunit)
+    androidTestImplementation(libs.androidxTestRules)
+    androidTestImplementation(libs.espressoCore)
 }
