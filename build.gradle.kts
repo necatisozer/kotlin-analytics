@@ -1,4 +1,5 @@
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
+import de.fayard.refreshVersions.core.versionFor
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -35,7 +36,7 @@ subprojects {
 
     ktlint {
         debug.set(false)
-        version.set(Versions.KTLINT)
+        version.set(versionFor("version.com.pinterest..ktlint"))
         verbose.set(true)
         android.set(false)
         outputToConsole.set(true)

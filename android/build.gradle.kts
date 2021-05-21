@@ -46,8 +46,8 @@ dependencies {
     implementation(kotlin("stdlib-jdk7"))
     api(project(":core"))
 
-    testImplementation(TestingLib.JUNIT)
+    testImplementation(libs.junitJunit)
 
-    androidTestImplementation(AndroidTestingLib.ANDROIDX_TEST_RUNNER)
-    androidTestImplementation(AndroidTestingLib.ANDROIDX_TEST_EXT_JUNIT)
+    androidTestImplementation(libs.androidxTestRunner)
+    androidTestImplementation(libs.androidxTestExtJunit)
 }
